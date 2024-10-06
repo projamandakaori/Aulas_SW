@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="calc.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <h1>Calculadora</h1>
+    <br>
+        <div class="borda">
+        <input type="text" id="visor" class="visor" value="0">
+        <table>
+            <tr>
+                <td><button id="btce" class="botao" onclick=" botao('CE')">CE</button></td>
+                <td><button id="btc" class="botao" onclick="botao('C')">C</button></td>
+                <td><button id="btseta" class="botao" onclick="botao('apagar')">[-</button></td>
+                <td><button id="btporc" class="botao" onclick="botao('%')">%</button></td>
+            </tr>
+            <tr>
+                <td><button id="num1" class="botao" onclick="botao(1)">1</button></td>
+                <td><button id="num2" class="botao" onclick="botao(2)">2</button></td>
+                <td><button id="num3" class="botao" onclick="botao(3)">3</button></td>
+                <td><button id="btmais" class="botao" onclick="botao('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button id="num4" class="botao" onclick="botao(4)">4</button></td>
+                <td><button id="num5" class="botao" onclick="botao(5)">5</button></td>
+                <td><button id="num6" class="botao" onclick="botao(6)">6</button></td>
+                <td><button id="btmenos" class="botao" onclick="botao('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="num7" class="botao" onclick="botao(7)">7</button></td>
+                <td><button id="num8" class="botao" onclick="botao(8)">8</button></td>
+                <td><button id="num9" class="botao" onclick="botao(9)">9</button></td>
+                <td><button id="btvezes" class="botao" onclick="botao('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button id="num0" class="botao" onclick="botao(0)">0</button></td>
+                <td><button id="btvirg" class="botao" onclick="botao(',')">,</button></td>
+                <td><button id="btigual" class="botao" onclick="botao('total')">=</button></td>
+                <td><button id="btdiv" class="botao" onclick="botao('/')">/</button></td>
+            </tr>
+        </table>
+    </center>
+        </div>
+</body>
+</html>
