@@ -1,0 +1,27 @@
+<html>
+    <div align="center">
+    <br><br><img id="imagem2" src="inteira.png" width="200px;"><br><br>
+
+    <button id="btnInteira">Me morda!</button>
+
+    <button id="btnMordida">Regenerar</button>
+
+    </div>
+    <br><br><br>
+</html>
+
+<script>
+
+    var botaoInteira = document.querySelector('#btnInteira');
+    botaoInteira.addEventListener('click', function(){
+        document.querySelector("#imagem2").setAttribute('src', 'inteira.png');
+    });
+
+    var botaoMordida = document.querySelector('#btnMordida');
+    botaoMordida.addEventListener('click', function(){
+        document.querySelector("#imagem2").setAttribute('src', 'mordida.png');
+    });
+
+
+
+</script>
