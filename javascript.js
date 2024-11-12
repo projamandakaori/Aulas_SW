@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     $(document).on("click", "#btConsulta", function () {
 
-        if($("#idNome").val() == ""){
+        if($("#nome").val() == ""){
             alert("Preencha todos os campos!");
             return 0;
         }
@@ -13,10 +13,14 @@ $(document).ready(function() {
             type: "GET",
             url: "consulta.php",
             data: "nome=" + $("#nome").val() ,
-            async: false,
+            async: false, //pode fazer de maneira distinta
             success: function (ret) {
                 //Retorna o resultado de acordo com o conteudo localizado.
-                alert(ret)
+                if (ret==1){
+                    window.location.href = "sistemaLogado.php";
+                }else{
+                    alert("Nome não encontrado!")
+                }
             }
         });
 

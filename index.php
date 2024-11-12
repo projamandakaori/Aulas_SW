@@ -4,15 +4,9 @@
 
 <html>
 	<head>	
-		<input type="text" id="nome" value="">	
+		<input type="text" id="nome" value="" placeholder="Digite o nome">	
 		<br>
 		<button id="btConsulta">Consultar</button>
 	</head>
 </html>
-
-
-
-
-
-
 
