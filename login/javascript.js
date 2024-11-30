@@ -20,7 +20,7 @@ $(document).ready(function() {
             async: false,
             success: function (ret) {
                 if (ret==1){
-                    window.location.href = "sigilo.php";
+                    window.location.href = "sistemalogado.php";
                 }else{
                     alert("Login não encontrado!");
                 }
