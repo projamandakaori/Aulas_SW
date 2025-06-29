@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+<div class="container">
+<h1>Login</h1>
+    <form id="loginForm" action="login.php" method="POST">
+            <p>E-mail</p>
+            <input type="text" id="input_email" class="input" placeholder="Insira seu e-mail" name="email" required>
+
+            <p>Senha</p>
+            <input type="password" id="input_senha" class="input" placeholder="Insira sua senha" name="senha" required>
+
+            <br><br>
+            <button class="btn_entrar" type="submit">Entrar</button>
+            <br><br>
+            <button onclick="window.location.href = 'cadastro.html'" class="btn_cadastrar">Cadastrar</button>
+    </form>
+</div>
+
+</body>
+
+<script>
+    document.getElementById("loginForm").addEventListener("submit", function(event){
+        const email = document.getElementById("input_email").value.trim();
+        const senha = document.getElementById("input_senha").value;
+
+        const emailRegex = /^[^\s@] + @[^\s@] +\.[^\s@]+$/;
+
+        if (!emailRegex.test(email)){
+            alert("Por favor, insira um e-mail válido.");
+            event.preventDefault();
+            return;
+        }
+
+        if (senha.lenght === 0){
+            alert("Por favor, insira sua senha.");
+            event.preventDefault();
+            return;
+        }
+    });
+
+
+
+</script>
+
+
+</html>
